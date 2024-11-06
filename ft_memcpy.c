@@ -6,7 +6,7 @@
 /*   By: makamins <makamins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 18:37:52 by makamins          #+#    #+#             */
-/*   Updated: 2024/11/02 19:02:43 by makamins         ###   ########.fr       */
+/*   Updated: 2024/11/04 21:34:00 by makamins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char	*ptrdest;
 	unsigned char	*ptrsrc;
-	size_t	i;
+	size_t			i;
 
 	if (dest == NULL && src == NULL)
 		return (NULL);

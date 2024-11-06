@@ -6,7 +6,7 @@
 /*   By: makamins <makamins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 21:38:50 by makamins          #+#    #+#             */
-/*   Updated: 2024/11/02 16:49:35 by makamins         ###   ########.fr       */
+/*   Updated: 2024/11/04 21:32:31 by makamins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char	*s_new;
 	unsigned int	len;
 	unsigned int	i;
-	
+	char			*s_new;
+
 	len = ft_strlen(s);
 	s_new = ft_calloc((len + 1), sizeof(char));
 	if (s_new == NULL)

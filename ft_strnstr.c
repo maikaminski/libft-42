@@ -6,7 +6,7 @@
 /*   By: makamins <makamins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 18:03:00 by makamins          #+#    #+#             */
-/*   Updated: 2024/11/02 20:53:53 by makamins         ###   ########.fr       */
+/*   Updated: 2024/11/04 21:22:52 by makamins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;
 	size_t	j;
-	size_t len_l;
-	
-	
+	size_t	len_l;
+
 	if (*little == '\0')
 		return ((char *)big);
 	len_l = ft_strlen(little);

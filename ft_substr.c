@@ -1,31 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: makamins <makamins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/29 19:03:55 by makamins          #+#    #+#             */
-/*   Updated: 2024/11/04 21:33:21 by makamins         ###   ########.fr       */
+/*   Created: 2024/10/29 18:22:22 by makamins          #+#    #+#             */
+/*   Updated: 2024/11/04 19:54:56 by makamins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
-	unsigned char	*s1_char;
-	unsigned char	*s2_char;
-	size_t			i;
+	size_t	s_len;
+	char	*substr;
 
-	s1_char = (unsigned char *)s1;
-	s2_char = (unsigned char *)s2;
-	i = 0;
-	while (i < n)
+	if (!s)
+		return (NULL);
+	s_len = ft_strlen(s);
+	if (start >= s_len)
+		return (ft_strdup(""));
+	if (len > s_len - start)
 	{
-		if (s1_char[i] != s2_char[i])
-			return (s1_char[i] - s2_char[i]);
-		i++;
+		len = s_len - start;
 	}
-	return (0);
+	substr = (char *)malloc((len + 1) * sizeof(char));
+	if (!substr)
+		return (NULL);
+	ft_strlcpy(substr, s + start, len + 1);
+	return (substr);
 }

@@ -6,7 +6,7 @@
 /*   By: makamins <makamins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 18:34:01 by makamins          #+#    #+#             */
-/*   Updated: 2024/11/02 18:26:20 by makamins         ###   ########.fr       */
+/*   Updated: 2024/11/06 19:41:42 by makamins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*dest;
 	unsigned char	c_char;
-	size_t	i;
+	size_t			i;
 
 	dest = (unsigned char *)s;
 	c_char = (unsigned char)c;
@@ -28,4 +28,3 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
- 

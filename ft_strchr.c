@@ -6,7 +6,7 @@
 /*   By: makamins <makamins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 20:40:07 by makamins          #+#    #+#             */
-/*   Updated: 2024/11/02 18:36:41 by makamins         ###   ########.fr       */
+/*   Updated: 2024/11/04 21:29:59 by makamins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	int	i;
 	char	*ptr;
-	
+	int		i;
+
 	ptr = (char *)s;
 	i = 0;
 	while (ptr[i])

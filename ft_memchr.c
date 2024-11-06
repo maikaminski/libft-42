@@ -6,7 +6,7 @@
 /*   By: makamins <makamins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 18:56:48 by makamins          #+#    #+#             */
-/*   Updated: 2024/11/02 17:25:15 by makamins         ###   ########.fr       */
+/*   Updated: 2024/11/04 21:34:47 by makamins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	c_char;
 	unsigned char	*s_char;
-	size_t	i;
+	size_t			i;
 
 	c_char = (unsigned char )c;
 	s_char = (unsigned char *)s;

@@ -6,7 +6,7 @@
 /*   By: makamins <makamins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 18:27:50 by makamins          #+#    #+#             */
-/*   Updated: 2024/11/02 15:48:01 by makamins         ###   ########.fr       */
+/*   Updated: 2024/11/04 21:25:31 by makamins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	if (mem_alloc == NULL)
 		return (NULL);
 	ft_bzero(mem_alloc, total);
-		return (mem_alloc);
+	return (mem_alloc);
 }

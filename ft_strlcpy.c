@@ -6,7 +6,7 @@
 /*   By: makamins <makamins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 19:30:40 by makamins          #+#    #+#             */
-/*   Updated: 2024/11/02 18:26:39 by makamins         ###   ########.fr       */
+/*   Updated: 2024/11/04 21:27:56 by makamins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
-	
+
 	i = 0;
 	if (size > 0)
 	{

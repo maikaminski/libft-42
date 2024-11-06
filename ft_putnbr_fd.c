@@ -6,7 +6,7 @@
 /*   By: makamins <makamins@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 15:37:50 by makamins          #+#    #+#             */
-/*   Updated: 2024/10/19 16:27:16 by makamins         ###   ########.fr       */
+/*   Updated: 2024/11/04 19:47:30 by makamins         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	int	nbr;
+	long int	nbr;
 
 	nbr = n;
 	if (nbr < 0)
@@ -23,8 +23,6 @@ void	ft_putnbr_fd(int n, int fd)
 		nbr *= -1;
 	}
 	if (nbr > 9)
-	{
 		ft_putnbr_fd(nbr / 10, fd);
-		ft_putchar_fd(nbr % 10 + '0', fd);
-	}
+	ft_putchar_fd((nbr % 10) + '0', fd);
 }
