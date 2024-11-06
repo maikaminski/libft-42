@@ -5,10 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: makamins <makamins@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/10/10 21:29:19 by makamins          #+#    #+#              #
-#    Updated: 2t_putchar.c \
-		ft_putstr.c \
-		ft_strcmp.c \024/10/17 20:16:13 by makamins         ###   ########.fr        #
+#    Created: 2024/11/06 19:58:48 by makamins          #+#    #+#              #
+#    Updated: 2024/11/06 19:58:54 by makamins         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
